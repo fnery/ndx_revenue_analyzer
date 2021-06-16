@@ -33,7 +33,7 @@ import matplotlib.ticker as mtick
 from datetime import datetime
 
 # USER SETTINGS ---------------------------------------------------------------
-ETHERSCAN_API_KEY = "9HHKKMJYSI5YDIJX38NHC8NHSB6MU16GZE"
+ETHERSCAN_API_KEY = ""
 PLOT_REVENUE_BY_INDEX = True
 # USER SETTINGS ---------------------------------------------------------------
 
