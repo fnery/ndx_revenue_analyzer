@@ -105,7 +105,7 @@ def query_to_json(query):
 
 
 if __name__ == '__main__':
-    # APIs queries
+    # API queries
     # 1) ERC20 "transactions" from indexed token addresses into indexed treasury
     # 2) Current "prices" of the indexed tokens
     # 3) Stats about $NDX (indexed governance token) for price-to-sales calculation
@@ -128,8 +128,6 @@ if __name__ == '__main__':
     df['dateTime'] = df['dateTime'].dt.date
 
     # Only want transactions between desired dates
-    # date_bounds = [START_DATE, END_DATE]
-    # date_bounds = [to_datetime(x) for x in date_bounds]
     after = df["dateTime"] >= date_bounds[0]
     before = df["dateTime"] <= date_bounds[1]
     between = after & before
